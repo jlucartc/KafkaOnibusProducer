@@ -9,20 +9,20 @@ class MqttThread extends Thread{
         
         println("Running...")
         
-        //val user : String = "bus_gps_data"
-        // password : Array[Char] = "ttn-account-v2.AXVZUWtEus1MMpVF8qGf8a7jQEbkU4sUA9sM3WsGkDI".toCharArray
+        val user : String = "luca"
+        val password : Array[Char] = "123".toCharArray
         //val publisher : MqttClient = new MqttClient("tcp://brazil.thethings.network:1883",UUID.randomUUID().toString);
         val publisher : MqttClient = new MqttClient("tcp://localhost:1883",UUID.randomUUID().toString);
     
-        //var options = new MqttConnectOptions()
+        var options = new MqttConnectOptions()
     
-        //options.setUserName(user)
-        //options.setPassword(password)
+        options.setUserName(user)
+        options.setPassword(password)
     
         try {
         
-            //publisher.connect(options)
-            publisher.connect()
+            publisher.connect(options)
+            //publisher.connect()
         
         }catch{
         
@@ -50,7 +50,17 @@ class MqttThread extends Thread{
         
             @throws(classOf[Exception])
             override def messageArrived(topic: String, message: MqttMessage): Unit = {
-                println("Receiving Data, Topic : %s, Message : %s".format(topic, message))
+                if(message.toString == "close") {
+                 
+                    println("Closing connection")
+                    
+                    publisher.close()
+    
+                }else{
+    
+                    println("Receiving Data, Topic : %s, Message : %s".format(topic, message))
+                    
+                }
             }
         
             override def connectionLost(cause: Throwable): Unit = {

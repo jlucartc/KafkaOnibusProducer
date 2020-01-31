@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/luca/KafkaOnibusProducer/src/main/scala/MQTTMessageConsumer.scala:60:28: org.eclipse.paho.client.mqttv3.MqttMessage and String are unrelated: they will most likely never compare equal[0m
+[0m[[0m[33mwarn[0m] [0m[0m                if(message == "close"){[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
