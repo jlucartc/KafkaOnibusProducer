@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KafkaOnibusProducer.iml" filepath="$PROJECT_DIR$/.idea/modules/KafkaOnibusProducer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KafkaOnibusProducer-build.iml" filepath="$PROJECT_DIR$/.idea/modules/KafkaOnibusProducer-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KafkaOnibusService.iml" filepath="$PROJECT_DIR$/.idea/modules/KafkaOnibusService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KafkaOnibusService-build.iml" filepath="$PROJECT_DIR$/.idea/modules/KafkaOnibusService-build.iml" />
     </modules>
   </component>
 </project>

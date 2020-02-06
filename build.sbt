@@ -1,4 +1,4 @@
-name := "KafkaOnibusProducer"
+name := "KafkaOnibusService"
 
 version := "0.1"
 
