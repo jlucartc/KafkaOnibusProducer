@@ -1,0 +1,12 @@
+
+//Utilize as seguintes variáveis de ambiente para configurar os serviços:
+// Crie um arquivo .sh em /etc/profile.d/ com as variáveis e faça log-out/log-in para que elas sejam carregadas
+
+export GITHUB_JLUCARTC_BOOTSTRAP_SERVERS=
+export GITHUB_JLUCARTC_KEY_SERIALIZER=
+export GITHUB_JLUCARTC_VALUE_SERIALIZER=
+export GITHUB_JLUCARTC_ACKS=
+export GITHUB_JLUCARTC_MQTT_TOPIC=
+export GITHUB_JLUCARTC_MQTT_USER=
+export GITHUB_JLUCARTC_MQTT_PASSWORD=
+export GITHUB_JLUCARTC_MQTT_URI=
